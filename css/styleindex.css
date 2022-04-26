@@ -1,0 +1,444 @@
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:normal;
+    margin: 0;
+    font-size: 15 px;
+    line-height: 1.6;
+    color: #333;
+    background: #0b1a35;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+} 
+
+#video {
+    position: fixed;
+    width: 100%;
+    max-width: 1440px;
+
+  }
+
+
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    z-index:1;
+    margin: 0 auto;
+}
+
+#content{
+    position: fixed;
+    margin: 0 auto;
+}
+
+.innerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1257px;
+    margin-left: 91px;
+
+}
+
+#logo{
+    margin-left: 180px ;
+    margin-top: 74.75px;
+    width: 100px;
+    height: 120px;
+}
+
+
+
+h1{
+    margin-top: 12%;
+    width: 100%;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+
+.text{
+    width: 100%;
+    margin-left: 8%;
+    color: #FFFFFF;
+
+}
+
+/* intro */
+.intro{
+    width: 100%;
+    height: 100vh;
+}
+/*button styles*/
+#btn{
+    color: white;
+    width: 540px;
+    height: 73px;
+    background: #298EA7;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10%;
+
+}
+
+.btn:hover{
+    background: #005f77;
+}
+
+p{
+    font-weight: 700;
+}
+
+.about{
+    margin-top: 10%;
+    font-size: 20px;
+    line-height: 70%;
+}
+
+#face{
+    margin-left: 50%;
+    margin-top: 4.4%;
+    width: 18.71px;
+    height: 35px;
+}
+
+#in{
+    margin-left: 4%;
+    width: 34.32px;
+    height: 35px;
+}
+
+#phone{
+    float: left;
+    width: 30.4px;
+    height: 32.33px;
+}
+
+#location{
+    float: left;
+    width: 27.2px;
+    height: 34.04px;
+}
+
+#mail{
+    float: left;
+    width: 32px;
+    height: 30.63px;
+}
+
+h2{
+    margin: 0;
+    float: left;
+    color: white;
+    font-size: 18px;
+}
+
+#phone, #mail, #location{
+    margin-left: 8%;
+    margin-right: 4px;
+}
+.cont{
+    margin-top: 3%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+}
+
+
+/*modal styles*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: #0b1a35;
+    margin: auto;
+    padding: 10px;  
+    border-radius: 20px;
+    width: 60%;
+    height: 80%;
+    color: white;
+  }
+
+  #textmodal{
+    background: none;
+    border-radius: 5px;
+    height: 230px;
+    font-size: 25px;
+    width: 470px;
+    border: rgb(104, 104, 104) solid 2px;
+    color: white;
+  }
+  
+  #name, #phonemodal, #mailmodal{
+      float: left;
+      background: none;
+      border-radius: 5px;
+      height: 40px;
+      font-size: 15px;
+      width: 40%;
+      border: rgb(104, 104, 104) solid 2px;
+      color: white;
+  } 
+  label{
+      font-size: 20px;
+  }
+  #namemodal{
+      margin-left: 32%;
+      margin-right: auto;
+  }
+
+  #modalbutton{
+    margin-left: 30%;
+    margin-right: auto;
+    color: white;
+    width: 540px;
+    height: 73px;
+    background: #298EA7;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+  
+  /* The Close Button */
+  .close, .closemodal {
+    color: #00a6cb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .closemodal:hover,
+  .closemodal:focus {
+    color: rgb(0, 48, 110);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+@media only screen and (max-width:992px) {
+
+    .innerContainer{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    body, .container, #content{
+        padding: 0;    
+    }
+
+    #mainName{
+        font-size: 25px;
+        margin-top: 0%;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    #girl{
+        width: 370px;
+    }
+    
+    .text{
+        margin-left: 0%;
+    }
+
+    #btn{
+        width: 65%;
+        margin-top: 10%;
+    }
+
+    .soc{
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width:720px) {
+   #logo{
+       margin-left: 5px;
+       margin-top: 5px;
+       width: 75px;
+   }
+   
+    #girl{
+        margin-top: 0px;
+    }
+
+    #video{
+        margin-top: 18%;
+    }
+
+    #mainName{
+        margin-top: 10%;
+        margin-left: 0px;
+        font-size: 20px;
+    }   
+
+    p{
+        font-size: 15px;
+    }
+
+
+    #btn{
+        margin-top: 20%;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .soc{
+        margin-top: 15%;
+    }
+
+    .cont{
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    #girl{
+        width: 260px;
+    }
+
+    .cont{
+        margin-left: 0%;
+    }
+
+    h2{
+        font-size: 16px;
+        width: 80%;
+    }
+
+    #btn{
+        margin-top: 10%;
+        width: 60%;
+        height: 15%;
+        font-size: 20px;
+    }
+
+    #location, #locText{
+        margin-top: 15%;
+    }
+
+    #locText{
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    p{
+        font-size: 16px;
+    }
+    
+    .soc{
+        margin-right: 10%;
+    }
+
+    .cont{
+        margin-right: 2%;
+    }
+
+    #btn{
+        width: 65%;
+    }
+
+    h2{
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+    #girl{
+        width: 40%;
+    }
+
+    #btn{
+        width: 65%;
+        font-size: 18px;
+    }
+
+    #phText{
+        width: 90%;
+    }
+
+    #locText{
+        width: 95%;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px){
+
+
+    #logo{
+        width: 12%;
+    }
+
+    #girl{
+        width: 50%;
+        margin-top: 0%;
+    }
+
+    #mainName{
+        font-size: 13px;
+    }
+
+    p{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #btn{
+        width: 72%;
+        font-size: 15px;
+    }
+
+    .soc{
+        margin-top: 21%;
+    }
+
+     #girl, .text{
+        margin-top: 12%;
+    }
+    
+    #video{
+        margin-top: 35%;
+    }
+}
+
+
+
